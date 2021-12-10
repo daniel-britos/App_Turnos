@@ -1,0 +1,22 @@
+﻿@model Turno
+
+
+
+
+<div class="turno-containter">
+    <h3> TURNO CONFIRMADO!.. </h3>
+    <div class="turno-container__child">
+        <h4>Detalle del turno:</h4><br />
+        <h5>Especialidad: @Model.Especialidad</h5>
+        <h5>@Model.Fecha.Day / @Model.Fecha.Month / @Model.Fecha.Year </h5>
+        <h5>Hora: @Model.Hora</h5>
+    </div>
+</div>
+<div class="btn-confirmado">
+    <a asp-action="Index" asp-controller="Home" class="btn btn-primary">Volver..</a>
+    <a asp-action="Turno" asp-controller="Turnos" class="btn btn-primary">Nuevo Turno</a>
+</div>
+
+
+
+

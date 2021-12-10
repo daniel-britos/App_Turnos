@@ -1,0 +1,46 @@
+﻿
+@model Profesional
+
+    <div style="display: flex; gap: 1rem;">
+        <h2> Profesionales </h2>
+
+        <a asp-action="Crear" class="btn btn-primary" style="padding: 3px; margin: 3px; font-size: 15px;;"> Agregar Nuevo </a>
+    </div>
+
+<br />
+
+
+@foreach (var item in @ViewBag.ProfList)
+{
+<div>
+    <table class="table table-success">
+        <thead>
+            <tr>
+                <th scope="col">Presentación</th>
+                <th scope="col">Datos</th>
+                <th scope="col">Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p>Especialidad: @item.Especialista</p>
+                    <p>Nombre: @item.Nombre</p>
+                    <p>Apellido: @item.Apellido</p>
+                    <p>DNI: @item.NumeroDocumento</p>
+                </td>
+                <td>
+                    <p>Fecha de nacimiento: @item.FechaNacimiento.Day/@item.FechaNacimiento.Month/@item.FechaNacimiento.Year</p>
+                    <p>e-mail: @item.Email</p>
+                    <p>Celular: @item.Celular</p>
+                    <p>Genero: @item.Genero</p>
+                </td>
+                <td>
+                    <a asp-action="Borrar" asp-route-id="@item.id" class="btn btn-primary">Borrar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+}

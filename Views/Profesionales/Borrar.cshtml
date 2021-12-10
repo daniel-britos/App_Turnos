@@ -1,0 +1,36 @@
+﻿@model Profesional
+@{
+    ViewData["Title"] = "Borrar Profesional";
+}
+
+<h3> ¿Desea borrar el profesional? </h3>
+<table class="table table-success">
+    <thead>
+        <tr>
+            <th scope="col">Presentación</th>
+            <th scope="col">Acción</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <p>
+                    @Html.DisplayNameFor(model => model.Nombre):
+                    @Html.DisplayFor(model => model.Nombre), @Html.DisplayFor(model => model.Apellido)
+                </p>
+                <p>
+                    @Html.DisplayNameFor(model => model.Especialista): @Html.DisplayFor(model => model.Especialista)
+                </p>
+                <p>
+                    @Html.DisplayNameFor(model => model.NumeroDocumento): @Html.DisplayFor(model => model.NumeroDocumento)
+                </p>
+            </td>
+            <td>
+                <form asp-action="Borrar" method="POST">
+                    <input type="hidden" asp-for="id" />
+                    <input type="submit" value="Borrar" class="btn btn-primary" />
+                </form>
+            </td>
+        </tr>
+    </tbody>
+</table>

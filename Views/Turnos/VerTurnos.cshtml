@@ -1,0 +1,41 @@
+﻿@model Turno
+
+
+<h2> Mis turnos: </h2>
+@foreach (var item in @ViewBag.TurnosList)
+{
+
+<div>
+    <table class="table table-success">
+        <thead>
+            <tr>
+                <th scope="col">Especialidad</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Hora</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p>@item.Especialidad</p>
+                </td>
+                <td>
+                    <p>@item.Fecha.Day / @item.Fecha.Month / @item.Fecha.Year</p>                   
+                </td>
+                <td>
+                    <p>@item.Hora</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+}
+
+<div class="btn-confirmado">
+    <a asp-action="Index" asp-controller="Home" class="btn btn-primary">Inicio</a>
+    <a asp-action="Turno" asp-controller="Turnos" class="btn btn-primary">Nuevo Turno</a>
+</div>
+
+
+
+

@@ -1,0 +1,219 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+#MyPopUp {
+    opacity: 70%;
+    border-radius: 10px;
+    
+}
+.modal-int {
+    display: flex;
+    justify-content: space-between;
+
+}
+.modal-int > i {
+    font-size: 80px;
+    color: red;
+    padding-right: 35px;
+    
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* MAPA */
+
+.maps > p > a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.maps > p {
+    margin: 5px;
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+
+/*img index*/
+.imgs-index {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
+.contacto-contenedor {
+    margin-bottom: 100px;
+
+
+}
+/*Galeria about*/
+.galeria-about {
+    width: 600px;
+    margin: auto;
+
+}
+
+/* index imagen */
+.img_container {
+    background-image: url(../img/fronthospital.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    color: white;
+}
+.text-center > p {
+    background-color: rgba(255,255,255, 0.3);
+    margin-left: 130px;
+    margin-right: 130px;
+    border-radius: 10px;
+}
+.text-center > p > a {
+    color: deepskyblue;
+}
+.text-center {
+    padding-top: 100px;
+}
+.navbar-brand {
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.text-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.text-index > p {
+    text-align: center;
+    width: 300px;
+    padding-top: 0px;
+}
+/* Turnos */
+.form-container {
+    background-color: powderblue;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0, 0.4);
+}
+.form-turnos {
+    padding: 20px;
+}
+.turno-containter {
+    max-width: 1240px;
+    margin: auto;
+    text-align: center;
+    background-color: powderblue;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0, 0.4);
+    padding-top: 20px;
+    margin-top: 80px;
+}
+.turno-containter > h3 {
+    padding: 0;
+    margin: 0 0 0;
+}
+
+
+.turno-container__child {
+    padding: 20px;
+}
+
+.btn-confirmado {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 30px;
+}
+.btn-confirmado > * {
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+/*sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+.btn:hover {
+    background-color: black;
+    opacity: 80%;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+
+  display: flex;
+  text-align: center;
+}

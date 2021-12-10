@@ -1,0 +1,56 @@
+﻿
+@model Contacto
+
+
+<h2> Dejenos un comentario.. </h2>
+<div class="row contacto-contenedor btn-success">
+    <div class="col-md-6">
+        <form asp-action="Guardar" method="post" class="row g-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group col-md-6">
+                <label asp-for="Nombre" class="contro-label"></label>
+                <input asp-for="Nombre" type="text" class="form-control" placeholder="Ingresa tu nombre...">
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="Apellido"></label>
+                <input asp-for="Apellido" type="text" class="form-control" placeholder="Ingresa tu nombre...">
+                <span asp-validation-for="Apellido" class="text-danger"></span>
+            </div>
+            <div class="form-group col-12">
+                <label asp-for="Email">e-mail</label>
+                <input asp-for="Email" type="email" class="form-control" placeholder="Ingresa tu e-mail...">
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <label asp-for="Nota"></label>
+            <textarea asp-for="Nota" type="text" id="" cols="40" rows="10" placeholder="Dejanos un comentario..."></textarea>
+            <span asp-validation-for="Nota" class="text-danger"></span>
+
+            <div class="form-group">
+                <input type="submit" value="Enviar" class="btn btn-primary" />
+            </div>
+            @if (!string.IsNullOrEmpty(ViewBag.msg))
+            {
+                <h6>@ViewBag.msg</h6>
+            }
+        </form>
+    </div>
+    <div class="col-md-6 maps" style="padding-left: 150px;">
+        <p>
+            <a href="https://reservaturno.com/centros/Dr.%20Blu%20Barber%C3%ADa?_branch_match_id=948224398962087341">
+                Reservá
+                tu turno aqui.
+            </a>
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.6438257705518!2d-58.56146160611527!3d-34.66369694262935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7d15e801f83%3A0x6999843b2805f2eb!2sAv.%20de%20Mayo%202222%2C%20B1704BVV%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1627746511105!5m2!1ses-419!2sar"
+                width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+        <p>Av. de Mayo 2222 - Ramos Mejia</p>
+    </div>
+</div>
+
+
+@section Scripts {  
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

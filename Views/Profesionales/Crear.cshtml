@@ -1,0 +1,50 @@
+﻿
+
+<h1> Nuevo Profesional </h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Guardar" method="post">
+            <div class="form-group">
+                <label for="especialista">Especialidad</label>
+                <input type="text" class="form-control" name="especialista" placeholder="Ingrese la especialidad...">
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" name="nombre" placeholder="Enter your name...">
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" name="apellido" placeholder="Enter your last name...">
+            </div>
+            <div class="form-group">
+                <label for="numerodocumento">Documento</label>
+                <input type="text" class="form-control" name="numerodocumento" placeholder="Enter your dni...">
+            </div>
+            <div class="form-group">
+                <label for="fechanacimiento">Fecha Nacimiento</label>
+                <input type="date" class="form-control" name="fechanacimiento" placeholder="Enter your date...">
+            </div>
+            <div class="form-group">
+                <label for="email">e-mail</label>
+                <input type="email" class="form-control" name="email" placeholder="Enter your e-mail...">
+            </div>
+            <div class="form-group">
+                <label for="celular">Celular</label>
+                <input type="text" class="form-control" name="celular" placeholder="Enter your number...">
+            </div>
+            <div class="form-group">
+                <label for="genero">Genero</label>
+                <select name="genero">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="NoInformar">No informar</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</div>
+
+<h3> Profesionales registrados </h3>

@@ -1,0 +1,90 @@
+﻿<!-- modal -->
+<div class="modal fade" id="MyPopUp" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-int">
+                    <i class="bi bi-emoji-frown"></i>
+                    <div>
+                        <h5>Este turno ya fué tomado.</h5>
+                        <h5>Busque otra fecha.</h5>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<h3> Seleccione un turno.. </h3>
+
+<div class="row form-container">
+    <div class="form-turnos">
+        <form asp-action="Confirmado" method="post">
+            <div class="form-group">
+                <label for="especialidad" class="form-label">Especialidad</label><br />
+                <select name="especialidad" class="form-select">
+                    <option name="especialidad" value="..." selected>...</option>
+                    <option name="especialidad" value="Cardiologia" selected>Cardiologia</option>
+                    <option name="especialidad" value="Medico osteopata" selected>Medico osteopata</option>
+                    <option name="especialidad" value="Ortopedia" selected>Ortopedia</option>
+                    <option name="especialidad" value="Traumatologia" selected>Traumatologia</option>
+                    <option name="especialidad" value="Pediatria" selected>Pediatria</option>
+                    <option name="especialidad" value="Alergias" selected>Alergias</option>
+                    <option name="especialidad" value="Endocrinologia" selected>Endocrinologia</option>
+                    <option name="especialidad" value="Fisiatria" selected>Fisiatria</option>
+                    <option name="especialidad" value="Urologo" selected>Urologo</option>
+                    <option name="especialidad" value="Endocrinologia" selected>Endocrinologia</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" class="form-control" name="fecha" placeholder="Ingrese una fecha...">
+            </div>
+
+            <div class="form-group">
+                <label for="hora">Hora</label>
+                <select name="hora">
+                    <option name="hora" value="...">...</option>
+                    <option name="hora" value="08:00">08:00</option>
+                    <option name="hora" value="08:30">08:30</option>
+                    <option name="hora" value="09:00">09:00</option>
+                    <option name="hora" value="09:30">09:30</option>
+                    <option name="hora" value="10:00">10:00</option>
+                    <option name="hora" value="10:30">10:30</option>
+                    <option name="hora" value="11:00">11:00</option>
+                    <option name="hora" value="11:30">11:30</option>
+                    <option name="hora" value="12:00">12:00</option>
+                    <option name="hora" value="12:30">12:30</option>
+                    <option name="hora" value="13:00">13:00</option>
+                    <option name="hora" value="13:30">13:30</option>
+                    <option name="hora" value="14:00">14:00</option>
+                    <option name="hora" value="14:30">14:30</option>
+                    <option name="hora" value="15:00">15:00</option>
+                    <option name="hora" value="15:30">15:30</option>
+                    <option name="hora" value="16:00">16:00</option>
+                    <option name="hora" value="16:30">16:30</option>
+                    <option name="hora" value="17:00">17:00</option>
+                </select>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Enviar">
+        </form>
+    </div>
+</div>
+
+
+
+
+
+<!---->
+@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#MyPopUp').modal('show');
+        });
+    </script>
+}
