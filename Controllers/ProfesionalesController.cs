@@ -9,7 +9,7 @@ using App_Turnos.Data;
 
 namespace App_Turnos.Controllers
 {
-    public class ProfesionalesController : Controller
+    public class ProfesionalesController : Microsoft.AspNetCore.Mvc.Controller
     {
         private ApplicationDbContext _context;
         public ProfesionalesController(ApplicationDbContext context)

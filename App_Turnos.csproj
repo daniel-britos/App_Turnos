@@ -1,16 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <UserSecretsId>aspnet-App_Turnos-00DC2435-3ECB-44E5-8AFD-2953640F9545</UserSecretsId>
     <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Remove="Models\Activador.cs" />
     <Compile Remove="Models\Activar.cs" />
   </ItemGroup>
-
   <ItemGroup>
     <Content Remove="C:\Users\Daniel\.nuget\packages\bootstrap\5.1.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.css" />
     <Content Remove="C:\Users\Daniel\.nuget\packages\bootstrap\5.1.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.css.map" />
@@ -45,7 +42,6 @@
     <Content Remove="C:\Users\Daniel\.nuget\packages\bootstrap\5.1.2\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css" />
     <Content Remove="C:\Users\Daniel\.nuget\packages\bootstrap\5.1.2\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css.map" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="5.1.2" />
     <PackageReference Include="Handlebars.Net" Version="2.0.9" />
@@ -53,15 +49,16 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.12" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.12" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.12" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.12" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
     <PackageReference Include="SendGrid" Version="9.25.0" />
+    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.3.256001">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.12" />
   </ItemGroup>
-
   <ItemGroup>
     <Folder Include="wwwroot\img\" />
   </ItemGroup>
-
 </Project>

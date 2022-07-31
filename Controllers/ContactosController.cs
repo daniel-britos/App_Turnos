@@ -9,7 +9,7 @@ using App_Turnos.Data;
 
 namespace App_Turnos.Controllers
 {
-    public class ContactosController : Controller
+    public class ContactosController : Microsoft.AspNetCore.Mvc.Controller
     {
         private ApplicationDbContext _context;
         public ContactosController(ApplicationDbContext context)

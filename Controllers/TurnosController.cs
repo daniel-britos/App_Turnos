@@ -11,7 +11,7 @@ namespace App_Turnos.Controllers
 {
 
     [Authorize]
-    public class TurnosController : Controller
+    public class TurnosController : Microsoft.AspNetCore.Mvc.Controller
     {
         private ApplicationDbContext _context;
         public TurnosController(ApplicationDbContext context)
